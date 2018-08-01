@@ -1,6 +1,6 @@
 <h1>Song Index</h1>
-<%= @songs.each do |song| %>
-  <table>
-    <tr>
-      <th>Title:</th>
-      <%= 
+<table>
+  <tbody>
+    <%= @songs.each do |song| %>
+    <tr><td><%= song.title %></td></tr>
+      <%=
