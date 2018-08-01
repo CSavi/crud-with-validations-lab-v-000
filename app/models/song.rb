@@ -5,5 +5,5 @@ class Song < ActiveRecord::Base
   #integer
   #optional if released is false
   #must be <= current year
-  validates :release_year, numericality: { less_than_or_equal_to:  }
+  validates :release_year, numericality: { less_than_or_equal_to: Date.current.year }
 end
